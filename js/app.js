@@ -4,7 +4,7 @@
         .directive('botao', function () {
             return {
                 restrict: 'E',
-                require: '^ngClick',
+                replace: true,
                 scope: {
                     label: '@',
                     tipo: '@',
@@ -24,8 +24,11 @@
             }
 
             vm.autorizar  =function (acao) {
-                vm.alertar('Vai pedir autorização e depois alertar');
-                acao();
+                if(confirm("Confirmar operação?")){
+                    acao();
+                }else{
+                    vm.alertar('Operação salvar cancelada...');
+                }
             }
         });
 })();

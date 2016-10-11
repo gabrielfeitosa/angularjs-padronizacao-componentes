@@ -12,9 +12,11 @@
             border-color: transparent;
             margin: 7px;
         }
+
         button i.fa {
             margin-right: 5px;
         }
+
         button.salvar {
             background-color: #337ab7;
         }
@@ -27,6 +29,8 @@
 
 <body ng-controller="Controller as ctrl">
     <h1>AngularJS: Padronização dos componentes</h1>
+    <botao label="Padrão" click="ctrl.alertar('Padrão')"> </botao>
+    <br>
     <botao tipo="salvar" label="Salvar" click="ctrl.alertar('Salvar')"> </botao>
     <br>
     <botao tipo="cancelar" label="Cancelar" click="ctrl.alertar('Cancelar')"> </botao>
