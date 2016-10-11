@@ -1,4 +1,4 @@
-# angularjs-directive-acess
+# AngularJS: Padronização dos componentes
 [Blog do Gabriel Feitosa!](http://gabrielfeitosa.com)
 
-Directive for blocking element ('button' and 'a') when you do not have permission to access..
+Diretiva para padronização dos componentes. Exemplo com botões.
